@@ -34,7 +34,7 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Log In"/>
                                         <connections>
-                                            <segue destination="Rhp-Ee-R4n" kind="presentation" modalPresentationStyle="fullScreen" id="UqU-h8-bKW"/>
+                                            <action selector="logInPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="i65-SL-Til"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -80,9 +80,9 @@
                     <connections>
                         <outlet property="infoPasswordButton" destination="sVO-AW-IRt" id="nmU-No-xF1"/>
                         <outlet property="infoUserNameButton" destination="bFB-11-QY8" id="rpb-vZ-d3i"/>
-                        <outlet property="logInButton" destination="Oyw-zA-ezG" id="fxE-Xh-u2c"/>
                         <outlet property="passwordTF" destination="btz-GD-xAh" id="eel-bg-26M"/>
                         <outlet property="userNameTF" destination="TQU-2n-b3P" id="OmF-ox-rbX"/>
+                        <segue destination="Rhp-Ee-R4n" kind="presentation" identifier="openWelcomeVC" modalPresentationStyle="fullScreen" id="Ob8-hJ-LqO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
