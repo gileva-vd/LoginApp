@@ -15,16 +15,24 @@ class MainViewController: UIViewController {
     @IBOutlet var infoUserNameButton: UIButton!
     @IBOutlet var infoPasswordButton: UIButton!
     
-    private let user = "Lera"
+    private let user = "User"
     private let password = "0987"
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let greetVC = segue.destination as?  GreetViewController else { return }
-        greetVC.user = user
+        guard let tabBarVC = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarVC.viewControllers else  { return }
+            
+            for viewController in viewControllers {
+                if let greetVC = viewController as?  GreetViewController {
+                    greetVC.user = user
+                }
+//                else if let secondVC = viewController as?  SecondViewController {
+//                    secondVC.view.backgroundColor = .systemMint
+//                }
+            }
     }
     
-    // Метод для скрытия клавиатуры тапом по экрану
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
         super.touchesBegan(touches, with: event)
