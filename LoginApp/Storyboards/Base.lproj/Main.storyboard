@@ -174,13 +174,23 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="udT-ue-qGq">
+                                <rect key="frame" x="40" y="8" width="240" height="317"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="bXz-lD-onv"/>
+                                    <constraint firstAttribute="height" constant="317" id="kxd-6d-b2L"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fnc-Zk-b6X"/>
                         <color key="backgroundColor" red="0.88846684174432999" green="0.72005187033938522" blue="0.52503706227920977" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="udT-ue-qGq" firstAttribute="leading" secondItem="Fnc-Zk-b6X" secondAttribute="leading" constant="40" id="08L-qr-nS6"/>
                             <constraint firstItem="8Gs-tC-siD" firstAttribute="leading" secondItem="Fnc-Zk-b6X" secondAttribute="leading" constant="40" id="B9n-Fc-oz1"/>
                             <constraint firstItem="Fnc-Zk-b6X" firstAttribute="bottom" secondItem="8Gs-tC-siD" secondAttribute="bottom" constant="100" id="d5G-5k-Pz3"/>
                             <constraint firstItem="Fnc-Zk-b6X" firstAttribute="trailing" secondItem="8Gs-tC-siD" secondAttribute="trailing" constant="40" id="rNB-W3-7VX"/>
+                            <constraint firstItem="Fnc-Zk-b6X" firstAttribute="trailing" secondItem="udT-ue-qGq" secondAttribute="trailing" constant="40" id="uTq-aZ-8JL"/>
+                            <constraint firstItem="udT-ue-qGq" firstAttribute="top" secondItem="Fnc-Zk-b6X" secondAttribute="top" constant="8" id="yiK-hR-qhY"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Acquaintance" id="Bsd-qk-PFU">
@@ -254,5 +264,6 @@
         <image name="1.circle.fill" catalog="system" width="128" height="123"/>
         <image name="2.circle.fill" catalog="system" width="128" height="123"/>
         <image name="3.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="Image" width="952" height="1280"/>
     </resources>
 </document>
