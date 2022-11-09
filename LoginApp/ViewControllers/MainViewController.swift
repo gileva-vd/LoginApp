@@ -15,9 +15,7 @@ class MainViewController: UIViewController {
     @IBOutlet var infoUserNameButton: UIButton!
     @IBOutlet var infoPasswordButton: UIButton!
     
-    private let user = "User"
-    private let password = "0987"
-    
+    private let userModel = User.getUser()
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tabBarVC = segue.destination as? UITabBarController else { return }
@@ -25,11 +23,8 @@ class MainViewController: UIViewController {
             
             for viewController in viewControllers {
                 if let greetVC = viewController as?  GreetViewController {
-                    greetVC.user = user
+                    greetVC.user = userModel.login
                 }
-//                else if let secondVC = viewController as?  SecondViewController {
-//                    secondVC.view.backgroundColor = .systemMint
-//                }
             }
     }
     
@@ -39,7 +34,7 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func logInPressed() {
-        guard userNameTF.text == user, passwordTF.text == password else {
+        guard userNameTF.text == userModel.login, passwordTF.text == userModel.password else {
             showAlert(
                 withTitle: "Invalid login or password",
                 andMassage: "Please, enter correct login and password",
@@ -58,8 +53,8 @@ class MainViewController: UIViewController {
 
     @IBAction func getUserInfo(_ sender: UIButton) {
         switch sender{
-        case infoUserNameButton: showAlert(withTitle: "Hi!", andMassage: "Your name is \(user)")
-        case infoPasswordButton: showAlert(withTitle: "Hi!", andMassage: "Your password is \(password) ")
+        case infoUserNameButton: showAlert(withTitle: "Hi!", andMassage: "Your name is \(userModel.login)")
+        case infoPasswordButton: showAlert(withTitle: "Hi!", andMassage: "Your password is \(userModel.password) ")
         default:
             break;
         }

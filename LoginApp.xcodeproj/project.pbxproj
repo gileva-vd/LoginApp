@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F911B8E7291AF3AD00C1D665 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F911B8E6291AF3AD00C1D665 /* SecondViewController.swift */; };
+		F911B8F4291C24F200C1D665 /* InfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F911B8F3291C24F200C1D665 /* InfoData.swift */; };
+		F911B8F6291C373700C1D665 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F911B8F5291C373700C1D665 /* ThirdViewController.swift */; };
 		F9E3C98E2917F30C00009651 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E3C98D2917F30C00009651 /* AppDelegate.swift */; };
 		F9E3C9902917F30C00009651 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E3C98F2917F30C00009651 /* SceneDelegate.swift */; };
 		F9E3C9922917F30C00009651 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E3C9912917F30C00009651 /* MainViewController.swift */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		F911B8E6291AF3AD00C1D665 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F911B8F3291C24F200C1D665 /* InfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoData.swift; sourceTree = "<group>"; };
+		F911B8F5291C373700C1D665 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		F9E3C98A2917F30C00009651 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E3C98D2917F30C00009651 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9E3C98F2917F30C00009651 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +45,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F911B8E8291C224200C1D665 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F9E3C99B2917F30E00009651 /* Info.plist */,
+				F9E3C98D2917F30C00009651 /* AppDelegate.swift */,
+				F9E3C98F2917F30C00009651 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F911B8E9291C227900C1D665 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F9E3C9912917F30C00009651 /* MainViewController.swift */,
+				F9E3C9A129180AEF00009651 /* GreetViewController.swift */,
+				F911B8E6291AF3AD00C1D665 /* SecondViewController.swift */,
+				F911B8F5291C373700C1D665 /* ThirdViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F911B8EA291C22DF00C1D665 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F9E3C9932917F30C00009651 /* Main.storyboard */,
+				F9E3C9982917F30E00009651 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F911B8ED291C239500C1D665 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F911B8F3291C24F200C1D665 /* InfoData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F911B8EE291C23BD00C1D665 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F9E3C9962917F30E00009651 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F9E3C9812917F30C00009651 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +110,11 @@
 		F9E3C98C2917F30C00009651 /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				F9E3C98D2917F30C00009651 /* AppDelegate.swift */,
-				F9E3C98F2917F30C00009651 /* SceneDelegate.swift */,
-				F9E3C9912917F30C00009651 /* MainViewController.swift */,
-				F9E3C9A129180AEF00009651 /* GreetViewController.swift */,
-				F911B8E6291AF3AD00C1D665 /* SecondViewController.swift */,
-				F9E3C9932917F30C00009651 /* Main.storyboard */,
-				F9E3C9962917F30E00009651 /* Assets.xcassets */,
-				F9E3C9982917F30E00009651 /* LaunchScreen.storyboard */,
-				F9E3C99B2917F30E00009651 /* Info.plist */,
+				F911B8E8291C224200C1D665 /* App */,
+				F911B8E9291C227900C1D665 /* ViewControllers */,
+				F911B8EA291C22DF00C1D665 /* Storyboards */,
+				F911B8ED291C239500C1D665 /* Models */,
+				F911B8EE291C23BD00C1D665 /* Resources */,
 			);
 			path = LoginApp;
 			sourceTree = "<group>";
@@ -147,6 +193,8 @@
 				F9E3C9922917F30C00009651 /* MainViewController.swift in Sources */,
 				F9E3C98E2917F30C00009651 /* AppDelegate.swift in Sources */,
 				F9E3C9A229180AEF00009651 /* GreetViewController.swift in Sources */,
+				F911B8F6291C373700C1D665 /* ThirdViewController.swift in Sources */,
+				F911B8F4291C24F200C1D665 /* InfoData.swift in Sources */,
 				F911B8E7291AF3AD00C1D665 /* SecondViewController.swift in Sources */,
 				F9E3C9902917F30C00009651 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,7 +345,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZRTD52285X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = LoginApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -328,7 +376,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZRTD52285X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = LoginApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
